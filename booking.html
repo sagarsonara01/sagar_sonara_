@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Online - 25% OFF | 100SMILES Dental Care</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="100SMILES Dental Care Logo"></a>
+        </div>
+        <h1>100SMILES Dental Care</h1>
+        <p>Your trusted family dentist in Razole – advanced technology, gentle care</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="team.html">Our Team</a>
+        <a href="articles.html">Health Tips</a>
+        <a href="contact.html">Contact</a>
+        <a href="booking.html" class="active">Book Online</a>
+    </nav>
+
+    <main>
+        <div class="offer pulse">
+            <strong>25% OFF Your First Visit</strong> when you book online today!<br>
+            Free Check-Up Day – Saturday 5 July • 10% OFF Annual Check-Ups until 30 April
+        </div>
+
+        <div class="booking-container">
+            <h2>Book Your Appointment Online</h2>
+            <p class="subtitle">Takes less than 2 minutes • Secure & confidential • Instant confirmation</p>
+
+            <form id="bookingForm" novalidate>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="name">Full Name <span class="required">*</span></label>
+                        <input type="text" id="name" name="name" required>
+                        <span class="error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number <span class="required">*</span></label>
+                        <input type="tel" id="phone" name="phone" required placeholder="e.g. 0412 345 678">
+                        <span class="error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="date">Preferred Date <span class="required">*</span></label>
+                        <input type="date" id="date" name="date" required min="2025-07-01">
+                        <span class="error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="time">Preferred Time</label>
+                        <input type="time" id="time" name="time" min="08:30" max="18:00">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service">Service Required <span class="required">*</span></label>
+                        <select id="service" name="service" required>
+                            <option value="">Please select...</option>
+                            <option value="checkup">Annual Check-Up (10% OFF until 30 Apr)</option>
+                            <option value="cleaning">Professional Cleaning</option>
+                            <option value="child">Children's Check-Up</option>
+                            <option value="implant">Implant Consultation</option>
+                            <option value="ortho">Orthodontics / Invisalign</option>
+                            <option value="whitening">Teeth Whitening</option>
+                            <option value="emergency">Emergency Appointment</option>
+                            <option value="free">Free Check-Up Day – 5 July</option>
+                        </select>
+                        <span class="error"></span>
+                    </div>
+                </div>
+
+                <!-- CHECKBOXES instead of radio buttons -->
+                <div class="form-group checkbox-group">
+                    <label>Patient Status <span class="required">*</span></label>
+                    <div class="checkbox-options">
+                        <label>
+                            <input type="checkbox" id="newPatient" name="patientStatus" value="new">
+                            New Patient – Claim 25% OFF First Visit
+                        </label>
+                        <label>
+                            <input type="checkbox" id="returningPatient" name="patientStatus" value="returning">
+                            Returning Patient
+                        </label>
+                    </div>
+                    <span class="error" id="patientError"></span>
+                    <small style="color:#666; display:block; margin-top:0.5rem;">
+                        Please tick <strong>only one</strong> box above
+                    </small>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Additional Notes or Concerns</label>
+                    <textarea id="message" name="message" rows="4" 
+                              placeholder="e.g. I have dental anxiety • Bringing two children • Prefer morning appointments..."></textarea>
+                </div>
+
+                <button type="submit" class="cta-button">
+                    Confirm My Appointment – Claim Discount
+                </button>
+
+                <p class="form-note">
+                    <small>We’ll send you a confirmation email and SMS. You can reschedule anytime.</small>
+                </p>
+            </form>
+        </div>
+
+        <div class="trust-badges" style="text-align:center; margin:4rem 0; padding:2rem; background:#f8f9fa; border-radius:15px;">
+            <p style="margin:0 0 1.5rem; font-size:1.1rem; color:#333;">
+                Over 1,200 happy families • Fully qualified Australian dentists • Bulk billing for eligible children
+            </p>
+            <img src="images/ada-seal.png" alt="ADA Member" style="height:60px; margin:0 1rem;">
+            <img src="images/health-fund.png" alt="Preferred Provider" style="height:60px; margin:0 1rem;">
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 100SMILES Dental Care • 33 Fantail Street, Razole QLD 4870 • Phone: 07 5000 5599</p>
+        <p>Email: <a href="mailto:admin@100smilesdentalcare.com.au">admin@100smilesdentalcare.com.au</a></p>
+    </footer>
+</body>
+</html>
